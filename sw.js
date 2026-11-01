@@ -1,5 +1,5 @@
 
-const CACHE = 'positiva-fm-v1';
+const CACHE = 'positiva-fm-v2';
 
 const FILES = [
   './',
