@@ -1,11 +1,11 @@
 
-const CACHE = 'positiva-fm-v2';
+const CACHE = 'positiva-fm-v3';
 
 const FILES = [
   './',
   './index.html',
   './manifest.webmanifest',
-  './icon.svg'
+  './icon.png'
 ];
 
 self.addEventListener('install', event => {
@@ -29,6 +29,7 @@ self.addEventListener('activate', event => {
 
 self.addEventListener('fetch', event => {
   if(event.request.method !== 'GET') return;
+
   if(new URL(event.request.url).origin !== location.origin) return;
 
   event.respondWith(
