@@ -2,12 +2,16 @@
   "name": "Positiva FM 99,1 Goiânia",
   "short_name": "Positiva FM",
   "start_url": "./",
-"display": "standalone",
+  "scope": "./",
+  "display": "standalone",
   "background_color": "#3b201d",
   "theme_color": "#54251f",
   "icons": [
-    { "src": "./icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
-    { "src": "./icon.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
-    { "src": "./icon-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+    {
+      "src": "./icon-1.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
   ]
 }
