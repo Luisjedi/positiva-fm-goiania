@@ -2,7 +2,7 @@
   "name": "Positiva FM 99,1 Goiânia",
   "short_name": "Positiva FM",
   "start_url": "./",
-  "display": "standalone",
+"display": "browser",
   "background_color": "#3b201d",
   "theme_color": "#54251f",
   "icons": [
