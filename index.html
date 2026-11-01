@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#54251f">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" href="./icon.svg" type="image/svg+xml">
+<title>Positiva FM 99,1</title>
+
+<style>
+*{box-sizing:border-box}
+
+body{
+ margin:0;
+ min-height:100vh;
+ display:grid;
+ place-items:center;
+ padding:20px;
+ background:linear-gradient(145deg,#24110f,#71372b);
+ color:white;
+ font-family:Arial,sans-serif;
+}
+
+.radio{
+ width:100%;
+ max-width:410px;
+ padding:30px 22px;
+ border-radius:28px;
+ background:#3b201d;
+ text-align:center;
+ box-shadow:0 15px 50px #0009;
+}
+
+.brand{
+ color:#f4c66e;
+ font-size:15px;
+ font-weight:bold;
+ letter-spacing:5px;
+}
+
+.logo{
+ width:135px;
+ height:135px;
+ margin:25px auto;
+ border-radius:50%;
+ background:linear-gradient(145deg,#f6d58a,#d99a42);
+ color:#54251f;
+ display:grid;
+ place-items:center;
+ font-size:48px;
+ font-weight:900;
+ border:5px solid #ffffff30;
+}
+
+h1{
+ font-size:27px;
+ margin:12px 0;
+}
+
+.frequency{
+ color:#f4c66e;
+ font-size:27px;
+ font-weight:bold;
+}
+
+.subtitle{
+ color:#e8d2c9;
+ font-size:14px;
+}
+
+.player{
+ margin:28px 0 20px;
+ padding:12px;
+ background:#fff;
+ border-radius:17px;
+ overflow:hidden;
+}
+
+iframe{
+ width:100%;
+ height:430px;
+ border:0;
+ display:block;
+}
+
+.site{
+ display:inline-block;
+ margin-top:15px;
+ padding:14px 20px;
+ border-radius:25px;
+ background:#e8bd69;
+ color:#3b201d;
+ font-weight:bold;
+ text-decoration:none;
+}
+
+footer{
+ font-size:12px;
+ color:#cdb8b0;
+ margin-top:25px;
+ line-height:1.7;
+}
+</style>
+</head>
+
+<body>
+<main class="radio">
+
+ <div class="brand">A SERTANEJA DE GOIÂNIA</div>
+
+ <div class="logo">99,1</div>
+
+ <h1>POSITIVA FM</h1>
+
+ <div class="frequency">99,1 FM</div>
+
+ <p class="subtitle">
+ Goiânia • Goiás • Brasil
+ </p>
+
+ <div class="player">
+  <iframe
+   src="https://positivafm.com.br/player"
+   title="Player oficial Positiva FM"
+   allow="autoplay; encrypted-media"
+   loading="eager">
+  </iframe>
+ </div>
+
+ <p class="subtitle">
+ Sertanejo atual, modão e grandes sucessos
+ </p>
+
+ <a class="site"
+    href="https://positivafm.com.br/player"
+    target="_blank"
+    rel="noopener">
+    ABRIR PLAYER OFICIAL
+ </a>
+
+ <footer>
+  POSITIVA FM 99,1<br>
+  Tá na Positiva, tá bom demais!<br>
+  Goiânia – Goiás
+ </footer>
+
+</main>
+
+<script>
+if('serviceWorker' in navigator){
+ window.addEventListener('load',()=>{
+  navigator.serviceWorker.register('./sw.js');
+ });
+}
+</script>
+
+</body>
+</html>
