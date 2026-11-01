@@ -1,11 +1,13 @@
 
-const CACHE = 'positiva-fm-v3';
+const CACHE = 'positiva-fm-v4';
 
 const FILES = [
   './',
-  './index.html',
-  './manifest.webmanifest',
-  './icon.png'
+'./index.html',
+'./manifest.webmanifest',
+'./icon.png',
+'./icon-192.png',
+'./icon-maskable.png'
 ];
 
 self.addEventListener('install', event => {
